@@ -13,7 +13,7 @@
 	   var password = prompt("Password required:", "");
 	   var common = ["hunter2", "password"];
 	   if (password) {
-		   this.location.href = password in common ? "lmao.html" : password + ".html"; 
+		   this.location.href = common.includes(password) ? "lmao.html" : password + ".html"; 
 		}
 	};
 	</script>
